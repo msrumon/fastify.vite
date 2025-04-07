@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node-lts/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "out",
+    "rootDir": "server"
+  },
+  "include": [
+    "server"
+  ]
+}

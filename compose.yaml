@@ -1,0 +1,19 @@
+services:
+  app:
+    image: node:lts-alpine
+    working_dir: /root
+    volumes:
+      - .:/root
+    ports:
+      - 8080:8080
+    command:
+      - npm
+      - run
+      - dev:server
+  npm:
+    image: node:lts-alpine
+    working_dir: /root
+    volumes:
+      - .:/root
+    entrypoint:
+      - npm
